@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth
+}
+
+@media (max-width: 995px) {
+    section {
+        padding-top: 8rem; /* Adjust for smaller screens */
+    }
+}
+
+/* Body Styling */
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: white;
+    color: black;
+}
+
+/* Header Styling */
+header {
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: #9fb9d1; 
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: black; 
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    color: #000080; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: black; 
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover{
+    color: #000080; 
+    border-bottom: 3px solid #000080;
+}
+
+/* Section Styling */
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+    background-color: white; 
+}
+
+/* Home Content Styling */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: white;
+    background-image: url(Design.png); 
+    width: max-content;
+    height: max-content;
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: #000080; 
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.home-img img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #000080;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* Social Icons */
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #000080;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #000080;
+}
+
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #000080;
+    box-shadow: 0 0 25px;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #9fb9d1;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #000080;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #000080;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale3d(1.03);
+    background-color: #000080;
+    color: #9fb9d1;
+    box-shadow: 0 0 25px #000080;
+}
+
+/* Removed Typing Text Animation */
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    /* Removed animation and span content */
+    color: black; /* Set the text color for typing text */
+}
+
+.typing-text span {
+    position: relative;
+    color: black; /* Ensure the span text is black */
+}
+
+/* Cursor Animation */
+@keyframes cursor {
+    to {
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 995px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vh;
+        margin-top: 4rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+    }
+}
+
+#about-me {
+    max-width: 100%;
+    background-color: #9fb9d1;
+}
+
+#about-me h1 {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+#about-me p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+#about-me h2 {
+    font-size: 2.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#about-me ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#about-me ul li {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+#about-me ul li::before {
+    content: "\2022"; 
+    font-size: 2.4rem;
+    color: #000080; 
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#family {
+    background-color: #9fb9d1;
+}
+
+#family h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center; 
+}
+
+.family-member {
+    margin-bottom: 2rem; 
+}
+
+.family-member h2 {
+    font-size: 2.4rem;
+    color: black; 
+    margin-bottom: 1rem;
+}
+
+.family-member p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+#favorites {
+    padding: 3rem;
+    background-color: #9fb9d1;
+    color: #333;
+}
+
+#favorites h1 {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#favorites p {
+    font-size: 1.6rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.favorites-category {
+    margin-bottom: 3rem;
+}
+
+.favorites-category h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    margin-left: 6rem;
+}
+
+.favorites-category ul {
+    list-style-type: square;
+    padding: 0;
+}
+
+.favorites-category ul li {
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    margin-left: 8rem;
+}
+
+.favorites-category ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.edit {
+    background-color: #9fb9d1;
+}
+.video {
+    display: block;  
+    margin: 1rem;   
+    max-width: 100%; 
+    height: auto;
+}
+
+.video h2{
+    font-size: 5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    margin-left: 0rem;
+}
